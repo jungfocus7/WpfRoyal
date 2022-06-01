@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1972
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WpfRoyal_vb", "WpfRoyal_vb\WpfRoyal_vb.vbproj", "{281DCA60-7AFB-423D-BB86-B853C821A3AD}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WpfRoyal.Run", "WpfRoyal.Run\WpfRoyal.Run.vbproj", "{281DCA60-7AFB-423D-BB86-B853C821A3AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfRoyal.WpfCommon", "WpfRoyal.WpfCommon\WpfRoyal.WpfCommon.csproj", "{34F10FCF-9914-42D8-A918-27E35689F00D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{281DCA60-7AFB-423D-BB86-B853C821A3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{281DCA60-7AFB-423D-BB86-B853C821A3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{281DCA60-7AFB-423D-BB86-B853C821A3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F10FCF-9914-42D8-A918-27E35689F00D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F10FCF-9914-42D8-A918-27E35689F00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F10FCF-9914-42D8-A918-27E35689F00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F10FCF-9914-42D8-A918-27E35689F00D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

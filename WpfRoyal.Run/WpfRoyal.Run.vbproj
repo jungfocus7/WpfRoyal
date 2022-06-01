@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{281DCA60-7AFB-423D-BB86-B853C821A3AD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>WpfRoyal_vb.My.MyApplication</StartupObject>
-    <RootNamespace>WpfRoyal_vb</RootNamespace>
-    <AssemblyName>WpfRoyal_vb</AssemblyName>
+    <StartupObject>WpfRoyal.Run.My.MyApplication</StartupObject>
+    <RootNamespace>WpfRoyal.Run</RootNamespace>
+    <AssemblyName>WpfRoyal.Run</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>..\__Debug\</OutputPath>
-    <DocumentationFile>WpfRoyal_vb.xml</DocumentationFile>
+    <DocumentationFile>WpfRoyal.Run.xml</DocumentationFile>
     <NoWarn>
     </NoWarn>
     <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
@@ -35,7 +35,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>..\__Release\</OutputPath>
-    <DocumentationFile>WpfRoyal_vb.xml</DocumentationFile>
+    <DocumentationFile>WpfRoyal.Run.xml</DocumentationFile>
     <NoWarn>
     </NoWarn>
     <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
@@ -93,6 +93,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
