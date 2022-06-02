@@ -23,7 +23,7 @@
             Time = 0;
             Duration = duration;
 
-            Easefunc = func ?? WxEaseFuncs.InOut;
+            Easefunc = func ?? WxEaseFuncs.QuartInOut;
         }
 
         public bool Running { get; private set; }

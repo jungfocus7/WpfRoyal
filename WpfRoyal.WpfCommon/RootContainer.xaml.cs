@@ -32,7 +32,10 @@
             _wx.Event += delegate (string type)
             {
                 Debug.WriteLine(string.Format("_wx: {0}/{1}", type, _wx.Current));
-                _rct.Width = _wx.Current;
+
+                double tw = _wx.Current;
+                if (tw < 0) tw = 0;
+                _rct.Width = tw;
             };
 
             MouseDown += delegate
