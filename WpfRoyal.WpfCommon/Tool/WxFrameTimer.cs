@@ -2,7 +2,7 @@
 {
     using System;
     using System.Windows.Media;
-    using WpfRoyal.WpfCommon.Core;
+    using WpfRoyal.Common.Core;
 
 
 

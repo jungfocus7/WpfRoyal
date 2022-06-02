@@ -55,9 +55,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Effect\WxEaseFuncs.cs" />
-    <Compile Include="Core\WxEventHandler.cs" />
     <Compile Include="Effect\WxTween.cs" />
     <Compile Include="Helper\WxFontHelper.cs" />
+    <Compile Include="Tool\WxCountTask.cs" />
     <Compile Include="Tool\WxFrameTimer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -92,6 +92,12 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WpfRoyal.Common\WpfRoyal.Common.csproj">
+      <Project>{4fce89e2-cb77-4dfb-acb8-dc11dd98f1d7}</Project>
+      <Name>WpfRoyal.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

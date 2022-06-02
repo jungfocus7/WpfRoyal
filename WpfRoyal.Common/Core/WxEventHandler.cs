@@ -1,4 +1,4 @@
-﻿namespace WpfRoyal.WpfCommon.Core
+﻿namespace WpfRoyal.Common.Core
 {
     public delegate void WxEventHandler(string type);
 }
