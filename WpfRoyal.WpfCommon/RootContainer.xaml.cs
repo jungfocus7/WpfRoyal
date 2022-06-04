@@ -27,22 +27,44 @@
 
         private void pf_Loaded(object tsd, RoutedEventArgs tea)
         {
-            WxTween _wx = new WxTween(_rct.Width, 36);
+            bool _xb = true;
 
+
+            WxTween _wx = new WxTween(_rct.Opacity, 36);
             _wx.Event += delegate (string type)
             {
                 Debug.WriteLine(string.Format("_wx: {0}/{1}", type, _wx.Current));
 
-                double tw = _wx.Current;
-                if (tw < 0) tw = 0;
-                _rct.Width = tw;
+                if (type == WxTween.EtUpdate)
+                {
+                    double tw = _wx.Current;
+                    if (tw < 0) tw = 0;
+                    _rct.Opacity = tw;
+                }
+                else if (type == WxTween.EtEnd)
+                {
+                    if (!_xb)
+                        _rct.Visibility = Visibility.Hidden;
+                }
             };
 
-            MouseDown += delegate
+
+            
+
+            MouseLeftButtonDown += delegate
             {
-                Point tmpt = Mouse.GetPosition(this);
-                _wx.Stop();
-                _wx.To(tmpt.X);
+                //Point tmpt = Mouse.GetPosition(this);
+                if (_xb)
+                {
+                    _wx.To(0);
+                    _xb = false;
+                }
+                else
+                {
+                    _rct.Visibility = Visibility.Visible;
+                    _wx.To(1);
+                    _xb = true;
+                }
             };
         }
 

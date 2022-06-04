@@ -38,6 +38,9 @@
         public Func<double, double, double, double, double> Easefunc { get; private set; }
 
 
+        public const string EtUpdate = "Update";
+        public const string EtEnd = "End";
+
         public event WxEventHandler Event;
         private void pf_CallEvent(string type)
         {
@@ -59,11 +62,11 @@
             {
                 Time++;
                 Current = Easefunc(Time, Begin, Change, Duration);
-                pf_CallEvent("Update");
+                pf_CallEvent(EtUpdate);
 
                 if (Time >= Duration)
                 {
-                    pf_CallEvent("End");
+                    pf_CallEvent(EtEnd);
                     Stop();
                 }
             }

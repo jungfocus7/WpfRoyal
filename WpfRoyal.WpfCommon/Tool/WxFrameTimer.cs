@@ -24,8 +24,8 @@
         }
 
 
-        public const string EtUpdate = "EtUpdate";
-        public const string EtEnd = "EtEnd";
+        public const string EtUpdate = "Update";
+        public const string EtEnd = "End";
 
         public event WxEventHandler Event;
         private void pf_CallEvent(string type)

@@ -29,10 +29,15 @@
         </Grid>
 
 
-        <Rectangle x:Name="_rct"
-            HorizontalAlignment="Left" VerticalAlignment="Top"
-            Margin="70,115,0,0" Width="15" Height="100"
-            Fill="#FF2E2EC7" Stroke="Black"/>
+        <Grid x:Name="_rct"
+            HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            Background="#332E2EC7">
+            <Rectangle
+                HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="70,115,0,0" Width="576" Height="100"
+                Fill="#FF2E2EC7" Stroke="Black"/>
+        </Grid>
+
 
         <!--<local:AroundAffair
             HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
